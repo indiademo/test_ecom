@@ -1,0 +1,25 @@
+{
+    "/catser/*":{
+        "target":"http://localhost:2244"
+    },
+    "/subcatser/*":{
+        "target":"http://localhost:2244"
+    },
+    "/subsubcatser/*":{
+        "target":"http://localhost:2244"
+    },
+    "/productser/*":{
+        "target":"http://localhost:2244"
+    },
+    "/userser/*":{
+        "target":"http://localhost:2244"
+    },
+    "/userorders/*":{
+        "target":"http://localhost:2244"
+    },
+    "/payment/*":{
+        "target":"http://localhost:2244"
+    }
+
+    
+}

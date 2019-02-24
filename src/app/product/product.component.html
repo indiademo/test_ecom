@@ -1,0 +1,98 @@
+
+<!-- <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+</script> -->
+
+
+<div class="container-fluid">
+    <!-- <div class="w-150" > -->
+            
+    <div class="row" >
+        <div class="col-md-3" style="margin-top: 10px;">
+            <div style="background-color: white;margin-top: 1px;">
+            <!-- <div><span>price</span>
+
+            </div>&nbsp;&nbsp;
+           
+            <div class="slider"></div><span style="float:right">max {{slideValue1}}</span>
+            <span>min  {{slideValue}}</span>
+            <input type="checkbox" value="Apple iPhone" [(ngModel)]="userFilter.product" placeholder="name"> -->
+        
+            <div class="container" style="padding: 0px;">
+               
+                <div class="card" style="border:none">
+                    <div class="card-header" style="background-color:#fff">Filters</div>
+                  <div class="card-body">PRICE</div>
+                  <div class="card-body ">
+                    <div  class="slider "></div><span style="float:right">max {{slideValue1}}</span>
+                    <span>min  {{slideValue}}</span>
+                  </div> 
+                  <div class="card-body cardborder" >BRAND
+
+                  </div>
+                  <div class="card-body"><input type="text"class="form-control srchbrand" [(ngModel)]="userFilter.rating" placeholder="Search by rating">
+                  </div>
+                  <div class="card-body"><input type="text"class="form-control srchbrand" [(ngModel)]="userFilter.product" placeholder="Search product">
+                  </div>
+                  <div class="card-footer"></div>
+                </div>
+              </div>
+            </div>  
+        </div>
+        <div class="col-md-9">
+            <div>
+                   
+
+                <ul *ngFor="let x of prodata | filterBy: userFilter" style="margin-top: 11px; width:290px;background-color: white;float: left;">
+                  
+                        <div class="card bg-light" style="border: none" >
+                          <div style="background-color: white; " class="pl-2">
+                            
+                            <a *ngIf="x.active==1"><img src="../assets/svgicon/icons8-love-48.png" style="width: 10%" data-toggle="tooltip" title="Add to wishlist " (click)="funactive(x,0)" (click)="funwishlist(x._id)"> </a>
+                               
+                                <a  *ngIf="x.active==0"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMoSURBVGhD7ZlLa9RQFMfH58IniCKCKD4WIiKlmZsZK5hOkmkLFhGxn6DoUlA/gCCCC13oSsGFwrgTFNGFVj+BroRON76oiCgttuTRQcHG/9Gj0emZR9qZ9lbzgz8Nybnn/m9y78mdNJOSkpLybzJd3L/as83jgWNehkqBo4Z8R933HfNaYJuDoWVu5dCmoTbUFnmuUy7KSblxfMlzs8eoTw6dO5OFzl2cvIK/US1hQNNkxCuoQ9y0JhSDATz52UbOR+I+S5WiuYObJicaGFiGji74tvmluoOGss3b433mOk71m8+usZ6uiW3qiDxA56NzmaWcqjnGurrW+rZ6KCVtXqr853Sbco1tga1G5NjmhME8IG+csj70JHDXnkqJkku99Po6Nvl2bjMdyzFJpYbII9utDQZxVU4wW2EBYz3I12YrdYXtygR2vrPRAtRBmGLfgqLqYNszQZV4LDXUURjMI7b9NxUnu1NqoLOmCge2s/0YTKnTUrDOwgw6xfZjcPKeFKyzcPPvsv0YzLnnUrDOgudnbD8GJ99JwToLnkfZfgxqc1kK1luqzPZjFlPp/SXyzPZj8JguSsE6izyz/ZiwO5eTgnUWeWb7MVEmswQXX1UH6yo8jdc1t/XY3A1KjbSUq06w7ZlEhrECQdo/FfxWehMN7F3JtmV8Vzna74ALZg/brQ8GckNMoIHg7SbbbEzUb6zCy+aFlGiBNSx9C6gLfblAw7GqRAupiUkrv5vtJcMrGgdR5kIh6byKPPgF02ZbswNlrheJkn8SapGwJr6GhdwRtjM3kPAwBhNUd9JuYS9VCW3zKNtoDT+2MLY5LnXYJk14btbi7luL12PswV16K3TaUqGP934xu4+7bQ9Bb+eWtpZmW42IHxXawSfLWoNplvgbbmOpO4nfE60gdHInaUHKppoXVSboNO3AOfX8E7oqS5s4yWAzQjUcDV0zz+kWFvp3AQzdkow2UGmyJ7+B0+gD5ng/BvRBMFwl9bHl74dWQ3cYZkuY87V+CpQ8y9jI4fpDLzOYHo4HoMq+k+vmy4uLyLKWo6qdQTE4S8d8OiUlJeW/J5P5Dm+T6tmj0ccGAAAAAElFTkSuQmCC" style="width: 10%" data-toggle="tooltip" title="Remove to wishlist " (click)="funinactive(x,1)"> </a>
+                              
+                                <div >
+                                    <!-- {{wishactv}} -->
+
+                            <!-- <span *ngIf="x.active==1"><input type="button" class="btn btn-danger btn-sm" value="inactive" (click)="funactive(x,0)" (click)="funwishlist(x._id)"></span>
+                             <span *ngIf="x.active==0" ><input type="button" class="btn btn-success btn-sm" value="active" (click)="funinactive(x,1)"></span> 
+                              -->
+                             
+                          
+                            </div> 
+                        </div>
+                          <div class="card-body text-center " style="background-color: #fff;">
+                            <a [routerLink]="['/productdetails',{id:x._id}]">
+                             <div class="_3BTv9X"style="height: 150px;width: 150px;">
+                                <img class="_1Nyybr  _30XEf0" src="assets/images/{{x.pimg}}"  alt="New York" >
+                              </div>
+                             <div class="divbor flex-child"data-placement="bottom" data-toggle="tooltip"title="{{x.product}}" style="text-align: left;margin-top: 18px;">
+                              
+                                  <span class="">{{x.product}}</span>
+                
+                              </div>
+                            </a> 
+                             <div class="divbor ratingd" >{{x.rating}}<span >★</span></div> 
+                             <div class="itemitle divbor"style="text-align: left;"><strong>{{x.price | currency:"INR"}}</strong></div>
+                             
+                            
+                
+                
+                          </div>
+                        </div>
+                    </ul>
+                    </div>   
+        </div>
+  
+      
+      </div>
+      <!-- </div> -->
+  </div>
+  <h1>
+      {{title}}
+      <!-- <img src="../assets/svgicon/icons8-love-filled_2.png"class="w-25" > -->
+    </h1>
+ 

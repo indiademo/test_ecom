@@ -1,0 +1,93 @@
+
+<div class="container promaindiv">
+<div *ngFor="let pro of prodetails" class = "row">
+   
+        <div class = "col-lg-4 col-md-12 col-sm-12">
+       
+            <div class = "thumbnail proimg">
+                <img src="assets/images/{{pro.pimg}}" class="center" [imageZoom]="" style="width:auto" [lensHeight]="300" width="100" [minZoomLevel]=".2" [maxZoomLevel]=".2">
+
+              <!-- <img class="proimgs" src = "http://localhost:2244/{{pro.pimg}}" width="60%" alt = "Generic placeholder thumbnail"> -->
+           </div>
+           
+           <ul class = "row  probtn list-unstyled">
+             
+              <li class="col col-6-12">
+                <button class="btn btn-default fonts-loaded cartbtn" (click)="funaddcart(pro)"><i class="fa fa-cart-plus"> ADD TO CART</i></button>
+               </li>
+               <li class="col col-6-12">
+                <button class="btn btn-default fonts-loaded byebtn"><i class="fa fa-flash"></i> BUY NOW</button>
+               </li> 
+
+              
+            </ul>  
+         
+        </div>
+        
+        <div class = "col-lg-8 col-md-12 col-sm-12">
+           <!-- <div class = "thumbnail">
+              <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+           </div>
+            -->
+           <div class = "caption mt-5" >
+              <h4><span>{{pro.product}}</span></h4>
+              <h5 class="pt-4"><label class="mr-2">Rating:</label>
+                <span class="fa fa-star text-success pr-1" *ngFor="let ob of rat"></span>
+                <span *ngIf="half==true" class="fa fa-star-half-full text-success"></span>
+              </h5>
+              <div class=""style="font-size:24px">
+                    <strong> {{pro.price | currency:"INR"}}</strong>&nbsp;<del>₹10000</del>
+                    
+            </div>
+            <div class="container proclr">
+                <span>Product Color</span><br>
+                
+                <input type="color" class="clrinpt" value="{{pro.productcolor}}" disabled><br>
+                <p class="text-success">Avaailable product {{pro.quantity}}</p>
+                <form>
+                  <span class="value-button" id="decrease" (click)="decreaseValue()" ><button class="button button5">-</button></span>&nbsp;
+                  <input class="w-12 inpbtn" type="number" id="number" value="1"  name="qty"   readonly [(ngModel)]="value">&nbsp;
+                  <span class="value-button" id="increase" (click)="increaseValue(pro.quantity)" >
+                      <button class="button button5">+</button><span style="background-color:greenyellow">{{qtymsg}}</span>
+                    <!-- <img src="/assets/+.png" width="20px"> -->
+                  </span>
+                  
+               </form>
+             
+            </div>
+            <div class="container">
+                    <h4><p>Product description</p></h4>
+                    {{pro.productdescription}}
+            </div>
+             
+           </div>
+        </div>
+        
+        <!-- <div class = "col-sm-6 col-md-3 proib">
+           <div class = "thumbnail">
+              <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+           </div>
+           
+           <div class = "caption">
+              <h3>Thumbnail label</h3>
+              <p>Some sample text. Some sample text.</p>
+              
+              <p>
+                 <a href = "#" class = "btn btn-primary" role = "button">
+                    Button
+                 </a> 
+                 
+                 <a href = "#" class = "btn btn-default" role =" button">
+                    Button
+                 </a>
+              </p>
+              
+           </div>
+        </div> -->
+        
+<!--      
+        </div>
+        <img src="http://localhost:2244/img1532709240_applei6.jpg" [imageZoom]="" style="width:auto" [lensHeight]="120" width="210" [minZoomLevel]=".2" [maxZoomLevel]=".4">
+
+        </div>
+        -->

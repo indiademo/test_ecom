@@ -1,0 +1,56 @@
+.fonts-loaded body, .fonts-loaded input, .fonts-loaded textarea, .fonts-loaded select, .fonts-loaded button {
+    font-family: Roboto, Arial, sans-serif;
+    letter-spacing: 0;
+}
+
+.uacss{
+    background-color: rgb(215, 221, 224);
+    text-align: center;
+}
+.NqIFxw {
+    font-size: 14px;
+    padding: 12px 5px 12px 66px;
+    cursor: pointer;
+}
+._1GRhLX {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+    margin-left: 25px;
+    margin-top: 14px;
+    width: 89%;
+}
+._3X41hQ {
+    padding: 0 0 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #878787;
+}
+.labe{
+    padding: 20px 12px 5px 24px;
+}
+a, img {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+NqIFxw,a:hover{
+    font-weight: 500;
+    color: #2874f0;
+    background-color: #f5faff;
+}
+
+.divbor{
+    
+    border-style: ridge;
+    border-width: 2px 0px 0px;
+    padding: 0 24px;
+
+} 
+.uicon{
+    background-color: #009656;
+}
+#icontxt{
+   color: #fff;
+}

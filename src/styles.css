@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+/* .navbar-toggler{
+    background: #fff;
+
+}
+
+.navbar-toggler-icon{background: #000;    height: 1px;}
+
+.navbar{z-index: 1000;}
+
+
+@media screen and (max-width:768px){
+.navbar-collapse{ background: #009656;} 
+}*/
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-blink{
+    padding-top:10px !important;
+}
+
+@media screen and (max-width:768px){
+.top-nav .navbar-nav .nav-blink{ width: 20%;}
+.nc-new{ padding: 0px 30px;}
+}
+
+@media screen and (max-width:690px){
+    .top-nav .navbar-nav .nav-blink{  width: 26%;}
+  
+    }
+
+    @media screen and (max-width:620px){
+        .input-mysize{
+            width: 92% !important;
+            float: none !important;
+        }
+
+        .search-img {     top: 18px !important;   }
+      
+        }
+
+        @media screen and (max-width:550px){
+        .top-nav .navbar-nav .nav-blink {
+            width: 30%;
+        }
+    }
+    @media screen and (max-width:480px){
+    .top-nav .navbar-nav .nav-blink {
+        width: 38%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .top-nav .navbar-nav .nav-blink {
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    .top-nav .navbar-nav .nav-blink {
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width:360px){
+    .top-nav .navbar-nav .nav-blink {
+        width:60%;
+    }
+}

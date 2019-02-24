@@ -1,0 +1,88 @@
+
+<div class="container-fluid">
+<div class="row clearfix">
+  <div   class="col-lg-7 col-md-12 col-sm-12 ">
+      <!-- <div  class="NqIFxw HDbIt8"> -->
+              
+      <div  class=" w-100">
+          
+        <div *ngFor="let x of arr; let i=index" class="card" style="margin:10px 0px; text-align: left;padding: 16px;">
+          
+          <div class="card-body">
+            <img class="card-img-top" src = "assets/images/{{x.pimg}}" alt="Card image" style="width:80px; float: left;padding-right:16px;">
+           <div>
+           <div  class="itemitle">{{x.product}}
+              </div>
+              <div class=""style="font-size:15px">
+                <strong>{{x.price | currency:"INR"}}</strong>
+              </div>
+              <span><a >SAVE FOR LATER</a>&nbsp;&nbsp;&nbsp;<a (click)="funremoveitem(i)">REMOVE</a></span>
+            </div>
+          </div>
+           <form class="itemitle">
+                <span class="value-button" id="decrease" (click)="decreaseValue(i)" ><button class="button button5">-</button></span>&nbsp;
+                <input class="inpbtn" type="number"  value="1"  name="qty"   readonly [(ngModel)]="x.selqty">&nbsp;
+                <span class="value-button" id="increase" (click)="increaseValue(x.quantity,i)" >
+                    <button class="button button5">+</button>
+                 <!-- <img src="/assets/+.png" width="20px">  -->
+                </span>
+            
+             </form>
+        </div>     
+          <div *ngIf="cartitemlength!=0" class="card-footer text-right">
+              <button class="btn btn-default fonts-loaded cartbtn" [routerLink]="['/']"> < CONTINUE SHOPPING</button>&nbsp;
+              <button class="btn btn-default fonts-loaded byebtn" (click)="funplaceorder()"[routerLink]="['/sucessorder']"> PLACE ORDER</button>
+          </div>
+        </div>
+      <!-- </div> -->
+  </div>  
+  <div *ngIf="cartitemlength!=0"  class="col-lg-4 col-md-12 col-sm-12">
+    <div class="card bg-light " style="margin-top: 14px;">
+      <div class="card-body text-center" style="background-color: #fff">
+         <div class="divbor">PRICE DETAILS</div>
+         <div class="pricedet">Price  ( {{cartitemlength}} items)<span class="pricedetr">{{costarr}}</span></div>
+         <div class="pricedet bdr" id="bdr">Delivery Charges<span class="pricedetr">FREE</span></div>
+         <div class="pricedet divbor">Amount Payable<span class="pricedetr">{{costarr}}</span></div>
+      </div>
+    </div>
+    <div class="card bg-light " style="margin-top: 14px;">
+        <div class="card-body text-center" style="background-color: #fff">
+           <div class="">Add Worth ₹374 more for FREE delivery</div>&nbsp;
+           <img src="../assets/svgicon/cartt.png" alt="New York" width="100" >
+
+        </div>
+      </div>
+      <div class="_3U2uhx">
+      <img src="../assets/svgicon/shield_a7ea6b.png" class="yDMSQ9">
+      <span class="iZvnDD">Safe and Secure Payments. Easy returns. 100% Authentic products.</span>
+      </div>
+  </div>
+
+  <div *ngIf="cartitemlength==0" class="container-fluid">
+    <div class="row clearfix">
+      <div   class="col-lg-12 col-md-12 col-sm-12 ">
+          <!-- <div  class="NqIFxw HDbIt8"> -->
+                  
+          <div  class=" w-100">
+            
+            <div class="card bg-light " style="margin-top: 14px;">
+                <div class="card-body text-center" style="background-color: #fff">
+                   <div class="divbor">MY CART (0)</div>
+
+                  <div class="_3U2uhx">
+                    <img src="../assets/svgicon/empty-cart_ee6141.png" class="w-25">
+                    <span class="iZvnDD">Safe and Secure Payments. Easy returns. 100% Authentic products.</span>
+                  </div>
+                    <a href="" style=""> + Add items from wishlist</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+</div> 
+</div>
+
+<!-- <input type="button" value="proceed" (click)="funaddcost()"> -->
+

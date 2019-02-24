@@ -1,0 +1,28 @@
+
+<div class="container-fluid">
+  <div class="row ">
+      <!-- <div   class="col-lg-6 col-md-12 col-sm-12 "></div> -->
+    <div   class="col-lg-12 col-md-12 col-sm-12 ">
+      
+        <!-- <div  class="NqIFxw HDbIt8"> -->
+                
+        <div  class=" w-100">
+            
+          <div *ngFor="let x of wishpro; let i=index" class="card" style="margin:10px 0px; text-align: left;padding: 16px;">
+            
+            <div class="card-body">
+              <img class="card-img-top" src = "assets/images/{{x.pimg}}" alt="Card image" style="width:80px; float: left;padding-right:16px;">
+             <div>
+             <div  class="itemitle">{{x.product}}
+                </div>
+                <div class=""style="font-size:15px">
+                  <strong>{{x.price | currency:"INR"}}</strong>
+                </div>
+                <!-- <span><a >SAVE FOR LATER</a>&nbsp;&nbsp;&nbsp;<a (click)="funremoveitem(i)">REMOVE</a></span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>          

@@ -1,0 +1,23 @@
+.trackbtn{
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2px;
+    background: #f9f9f9;
+    /* border: 1px solid #d7d7d7; */
+    margin-left: 10px;
+    box-shadow: none;
+}
+
+.DgI5Zd {
+    background: #009656;;
+    color: #fff;
+    box-shadow: none;
+    border: 1px solid #009656;
+    padding: 8px 12px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    width: 196px;
+}

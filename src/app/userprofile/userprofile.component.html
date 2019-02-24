@@ -1,0 +1,102 @@
+<div class="container-fluid">
+<div class="row">
+    <div class="col-lg-1 col-md-12 col-sm-12"></div>
+    <div class="col-lg-3 col-md-12 col-sm-12 uicon  _1GRhLX">
+        
+        <div class="labe ">
+                <img src="../assets/svgicon/profile-pic-male_2fd3e8.svg" style="margin-bottom: 22px;">
+                <label class="_3X41hQ" id="icontxt">Hello,<p>{{username}}</p></label> 
+             
+                
+            </div>
+
+        
+    </div>
+    
+
+    
+</div>  
+
+
+<div class="row">
+        <div class="col-lg-1 col-md-12 col-sm-12"></div>
+    <div class="col-lg-3 col-md-12 col-sm-12  _1GRhLX">
+            
+       
+        <div class="labe ">
+                
+            <img src="../assets/svgicon/orderr.svg" class="yDMSQ9">
+        <label class="_3X41hQ"><a [routerLink]="['/orders']" style="-webkit-text-stroke-width: medium;letter-spacing: 2px;">MY ORDERS<span style="margin-left: 102px;">></span></a>
+        </label> 
+        </div>
+        <!-- <div class="_3U2uhx"> 
+                <img src="../assets/svgicon/shield_a7ea6b.png" class="yDMSQ9">
+                <span class="iZvnDD">Safe and Secure Payments. Easy returns. 100% Authentic products.</span>
+                </div> -->
+        <div class="labe divbor">
+                <img src="../assets/svgicon/acc.svg" class="yDMSQ9">
+        <label class="_3X41hQ">ACCOUNT SETTINGS</label> 
+        </div>
+        <!-- <div class="NqIFxw HDbIt8">
+            <a routerLink="/account">Profile information</a>
+        </div> -->
+        <!-- <div class="NqIFxw HDbIt8">
+            <a routerLink="/account/addresses">Manage Addresses</a>
+        </div> -->
+        <!-- <div class="NqIFxw HDbIt8">
+            <a routerLink="/account/subscriptions">Notification Preferences</a>
+        </div> -->
+        <!-- <div class="NqIFxw HDbIt8">
+            <a routerLink="/account/pancard">PAN Card Information</a>
+        </div> -->
+
+        <!-- <div class="labe divbor">
+                <img src="../assets/svgicon/payment.svg" class="yDMSQ9">    
+            <label class="_3X41hQ">PAYMENTS</label> 
+        </div> -->
+        <div class="NqIFxw HDbIt8">
+            <a routerLink="/account/carddetails">Save Cards</a>
+        </div>
+        
+        <!-- <div class="labe divbor">
+                <img src="../assets/svgicon/mystf.svg" class="yDMSQ9">    
+            <label class="_3X41hQ">MY STUFF</label> 
+        </div> -->
+
+        <!-- <div class="NqIFxw HDbIt8 ">
+            <a routerLink="/account/rewards">My Rewards</a>
+        </div> -->
+        <!-- <div class="NqIFxw HDbIt8">
+            <a routerLink="/account/reviews">My Reviews & Ratings</a>
+        </div> -->
+        <!-- <div class="NqIFxw HDbIt8">
+            <a routerLink="/account/notifications">All Notifications</a>
+        </div> -->
+        <div class="NqIFxw HDbIt8">
+            <a [routerLink]="['wishlist']">My Wishlist</a>
+        </div>
+       
+        
+        <div class="labe ">
+                <img src="../assets/svgicon/iconmonstr-log-out-10.svg" class="yDMSQ9">
+            <label class="_3X41hQ"><a (click)="funlogout()" style="-webkit-text-stroke-width: medium;letter-spacing: 2px;">Logout</a>
+            </label> 
+            </div>
+
+          
+
+    </div>
+    <div class="col-lg-7 col-md-12 col-sm-12  _1GRhLX">
+            
+            <router-outlet></router-outlet>  
+    </div>
+    
+   
+       
+  
+   
+</div>  
+</div>
+
+
+

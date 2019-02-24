@@ -1,0 +1,119 @@
+.mt-40 {
+    margin-top: 40px !important;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+  }
+  .w-100 {
+    width: 63%!important;
+    width: 72%!important;
+    margin-top: 66px;
+    height: 315px;
+}
+.ratingd{
+    /* text-align: left; */
+    background-color: #388e3c;
+    color: white;
+    width: 49px;
+    border-radius: 5px;
+
+}
+.srchbrand{
+  border-style: ridge;
+  border-radius: unset;
+  border-width: 0px 0px 1px;
+  box-shadow: none;
+}
+    
+.cardborder{
+    
+  border-style: ridge;
+  border-width: 2px 0px 0px;
+  padding: 0 24px;
+
+}
+
+
+
+/* Text is directly within flex child,
+  so doing the wrapping here */
+.flex-child {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.w-25 {
+  width: 6%!important;
+}
+
+
+._3BTv9X {
+  position: relative;
+  margin: 0 auto;
+}
+
+._3BTv9X ._30XEf0 {
+  opacity: 1;
+}
+
+._3BTv9X ._1Nyybr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  /* opacity: 0; */
+  max-width: 100%;
+  max-height: 100%;
+}
